@@ -8,8 +8,7 @@ defmodule EctoAssoc.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: EctoAssoc.Worker.start_link(arg)
-      # {EctoAssoc.Worker, arg}
+      EctoAssoc.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
